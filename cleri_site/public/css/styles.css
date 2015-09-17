@@ -1,0 +1,267 @@
+
+body {
+  letter-spacing: .5px;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+.whole {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+
+.left-white, .right-white {
+  width: 10%;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 50000000;
+}
+
+.right-white {
+  right: 0;
+}
+
+.left-white {
+  left: 0;
+}
+
+html {
+  min-height: 800px;
+  height: 100%;
+  width: 80%;
+  background: url("../purple1.jpg") fixed;
+}
+
+.top {
+  width: 100%;
+  height: 50px;
+}
+
+a {
+  color: #A6193C;
+}
+
+a:hover {
+  color: #B27300;
+  text-decoration: none;
+
+}
+
+header h1 {
+  padding-left: 10px;
+  font-size: 32px;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  color: #A6193C;
+}
+
+header:hover, a:hover {
+  color: #A6193C;
+  text-decoration: none;
+}
+
+.header-bar {
+  background-color: white;
+  border-bottom: 1px solid #D3D3D3;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+h2, h3, h4, h5, .left-nav li, label {
+  letter-spacing: 1px;
+  font-family: 'ABeeZee', sans-serif;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+.left-nav {
+  width: 115px;
+  line-height: 38px;
+  font-size: 18px;
+  position: absolute;
+  top: 60px;
+  left: 30px;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+.left-nav a {
+  color: #000;
+  display: inline-block;
+  text-align: right;
+  text-decoration: none;
+  line-height: 20px;
+}
+
+.left-nav a:hover {
+  color: #A6193C;
+}
+
+.left-nav ul {
+  background-color: white;
+  padding: 20px 23px 20px 16px;
+  margin: 0 auto;
+}
+
+.flash {
+  position: absolute;
+  top: 10px;
+  left: 400px;
+  z-index: 50000;
+}
+
+#notice {
+  color: green;
+}
+
+.main-content {
+  position: relative;
+  top: 80px;
+  left: 146px;
+  background-color: #fff;
+  margin: 30px;
+  padding: 3px 48px 25px 48px;
+  width: auto;
+  max-width: 70%;
+}
+
+
+.plain {
+  font-family: Helvetica Neue;
+  font-weight: 200;
+}
+
+.projects {
+  padding: 0;
+}
+
+.table-header {
+  font-size: 11px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.project-image {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+
+.project {
+  width: 100%;
+}
+
+.project .name {
+  padding-top: 10px;
+}
+
+.project .name a {
+  color: black;
+  font-weight: bold;
+}
+
+.project .description {
+  width: 70%;
+}
+
+.ghub-link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.resume {
+  padding-left: 20px;
+}
+
+.resume li {
+  list-style-type: disc;
+  font-size: 12px;
+}
+
+@media only screen and (max-width : 992px) {
+
+  .main-content {
+    position: absolute;
+    left: 146px;
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+
+  .right-white, .left-white {
+    display: none;
+  }
+
+  .whole {
+    left: 0;
+    right: 0;
+  }
+
+  .main-content {
+    position: absolute;
+    left: 0;
+    max-width: 90%;
+  }
+
+  div.toggle {
+    position: fixed;
+    top: 24px;
+    right: 19px;
+    z-index: 1000;
+    width: 30px;
+    height: 30px;
+    background-image: url("../navicon7.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  .left-nav {
+    top: 15px;
+    left: 7px;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+  }
+
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /*// border-bottom: 1px solid #D3D3D3;*/
+
+  }
+
+  .menu ul li {
+    color: black;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .menu ul li:hover {
+    text-decoration: underline;
+   }
+
+  .menu a {
+    text-decoration: none;
+    color: black;
+  }
+}
