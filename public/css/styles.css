@@ -32,7 +32,11 @@ html {
   min-height: 800px;
   height: 100%;
   width: 80%;
-  background: url("../purple3.jpg") fixed;
+  background: url("../purple3.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .top {
