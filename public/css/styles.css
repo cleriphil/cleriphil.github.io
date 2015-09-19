@@ -128,14 +128,17 @@ h2 {
   position: relative;
   top: 80px;
   left: 146px;
-  max-width: 430px;
+  /*max-width: 430px;*/
   background-color: #fff;
   margin: 30px;
   padding: 3px 48px 25px 48px;
   width: auto;
-  /*max-width: 70%;*/
+  max-width: 70%;
 }
 
+ul {
+  padding: 0;
+}
 
 .plain {
   font-family: Helvetica Neue;
@@ -143,7 +146,8 @@ h2 {
 }
 
 .projects {
-  padding: 0;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .table-header {
