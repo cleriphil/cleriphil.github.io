@@ -124,11 +124,12 @@ h2 {
   position: relative;
   top: 80px;
   left: 146px;
+  max-width: 430px;
   background-color: #fff;
   margin: 30px;
   padding: 3px 48px 25px 48px;
   width: auto;
-  max-width: 70%;
+  /*max-width: 70%;*/
 }
 
 
@@ -151,6 +152,7 @@ li {
 
 .project-image {
   width: 100%;
+  max-width: 428px;
   margin-bottom: 10px;
   border: 1px solid gray;
   border-radius: 5px;
