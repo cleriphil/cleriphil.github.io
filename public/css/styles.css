@@ -204,6 +204,10 @@ li {
     font-size: 12px;
   }
 
+  header h1 {
+    font-size: 30px;
+  }
+
   .right-white, .left-white {
     display: none;
   }
@@ -215,9 +219,10 @@ li {
 
   .main-content {
     position: absolute;
+    top: 47px;
     left: 0;
     max-width: 90%;
-    padding: 0 20px;
+    padding: 0 20px 10px;
   }
 
   div.toggle {
