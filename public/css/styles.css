@@ -200,6 +200,10 @@ li {
 
 @media only screen and (max-width : 480px) {
 
+  body {
+    font-size: 12px;
+  }
+
   .right-white, .left-white {
     display: none;
   }
@@ -213,6 +217,7 @@ li {
     position: absolute;
     left: 0;
     max-width: 90%;
+    padding: 0 20px;
   }
 
   div.toggle {
