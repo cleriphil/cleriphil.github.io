@@ -32,7 +32,11 @@ html {
   min-height: 800px;
   height: 100%;
   width: 80%;
-  background: url("../purple1.jpg") fixed;
+  background: url("../purple3.jpg") no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .top {
@@ -124,6 +128,7 @@ h2 {
   position: relative;
   top: 80px;
   left: 146px;
+  /*max-width: 430px;*/
   background-color: #fff;
   margin: 30px;
   padding: 3px 48px 25px 48px;
@@ -131,6 +136,9 @@ h2 {
   max-width: 70%;
 }
 
+ul {
+  padding: 0;
+}
 
 .plain {
   font-family: Helvetica Neue;
@@ -161,7 +169,8 @@ h2 {
   margin-top: 40px;
 }
 .projects {
-  padding: 0;
+  max-width: 430px;
+  margin: 0 auto;
 }
 
 .table-header {
@@ -176,6 +185,7 @@ li {
   width: 100%;
   position: relative;
   top: 10px;
+  max-width: 428px;
   margin-bottom: 10px;
   border: 1px solid gray;
   border-radius: 5px;
@@ -263,6 +273,14 @@ li {
 
 @media only screen and (max-width : 480px) {
 
+  body {
+    font-size: 12px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
   .right-white, .left-white {
     display: none;
   }
@@ -277,8 +295,10 @@ li {
 
   .main-content {
     position: absolute;
+    top: 47px;
     left: 0;
     max-width: 90%;
+    padding: 0 20px 10px;
   }
 
   div.toggle {
