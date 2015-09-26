@@ -11,4 +11,9 @@ $(document).ready(function(){
     }
   });
 
+  $('.nav-link').click(function() {
+    // $('.nav-link').css( "background-color", "yellow");
+  });
+
+
 });
