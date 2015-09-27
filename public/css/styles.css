@@ -31,8 +31,8 @@ body {
 html {
   height: 100%;
   width: 80%;
-  background-color: yellow;
-  background: url("../purple3.jpg") no-repeat fixed;
+  background-color: #F5F5DC;
+  /*background: url("../purple3.jpg") no-repeat fixed;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -45,24 +45,25 @@ html {
 }
 
 a {
-  color: #A6193C;
+  /*color: rgba(0,102,0,.8);*/
+  color: #b25838;
 }
 
-a:hover {
-  color: #B27300;
-  text-decoration: none;
 
-}
 
 header h1 {
   padding-left: 10px;
   font-size: 32px;
   font-family: 'Alegreya Sans SC', sans-serif;
-  color: #A6193C;
+}
+
+header h1 a {
+  color: #006600;
+
 }
 
 header:hover, a:hover {
-  color: #A6193C;
+  color: #B29600;
   text-decoration: none;
 }
 
@@ -106,7 +107,7 @@ h2 {
 }
 
 .navlink:hover, .navlink:focus {
-  color: #A6193C;
+  color: #006600;
 }
 
 .left-nav ul {
@@ -116,7 +117,7 @@ h2 {
 }
 
 .active {
-  background-color: rgba(166,25,60,.2);
+  background-color: rgba(0,102,0,.2);
 }
 
 .active a:hover {
