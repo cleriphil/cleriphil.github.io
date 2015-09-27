@@ -29,9 +29,9 @@ body {
 }
 
 html {
-  min-height: 800px;
   height: 100%;
   width: 80%;
+  background-color: yellow;
   background: url("../purple3.jpg") no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -68,7 +68,6 @@ header:hover, a:hover {
 
 .header-bar {
   background-color: white;
-  border-bottom: 1px solid #D3D3D3;
   position: fixed;
   top: 0;
   width: 100%;
@@ -96,16 +95,17 @@ h2 {
 }
 
 
-.left-nav a {
+.left-nav .navlink {
   color: #000;
   display: inline-block;
-  text-align: right;
   text-decoration: none;
-  line-height: 20px;
   padding-left: 10px;
+  width: 100%;
+  transition: all 0.2s linear;
+  cursor: pointer;
 }
 
-.left-nav a:hover {
+.navlink:hover, .navlink:focus {
   color: #A6193C;
 }
 
@@ -115,27 +115,14 @@ h2 {
   margin: 0 auto;
 }
 
-.flash {
-  position: absolute;
-  top: 10px;
-  left: 400px;
-  z-index: 50000;
-}
-
-
 .active {
   background-color: rgba(166,25,60,.2);
 }
 
 .active a:hover {
-  
 }
 
-#notice {
-  color: green;
-}
-
-.main-content {
+.sections {
   position: relative;
   top: 80px;
   left: 146px;
@@ -145,6 +132,10 @@ h2 {
   padding: 3px 48px 25px 48px;
   width: auto;
   max-width: 70%;
+}
+
+.sections:not(#section_2) {
+  display: none;
 }
 
 ul {
@@ -179,7 +170,7 @@ ul {
 .about-section {
   margin-top: 40px;
 }
-.projects {
+.projects-list {
   max-width: 430px;
   margin: 0 auto;
 }
@@ -262,7 +253,7 @@ li {
 
 @media only screen and (max-width : 992px) {
 
-  .main-content {
+  .sections {
     position: absolute;
     left: 146px;
   }
@@ -304,7 +295,7 @@ li {
     right: 0;
   }
 
-  .main-content {
+  .sections {
     position: absolute;
     top: 47px;
     left: 0;
