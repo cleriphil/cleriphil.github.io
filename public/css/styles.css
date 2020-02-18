@@ -135,7 +135,7 @@ h2 {
   max-width: 70%;
 }
 
-.sections:not(#section_2) {
+.sections:not(#section_3) {
   display: none;
 }
 
